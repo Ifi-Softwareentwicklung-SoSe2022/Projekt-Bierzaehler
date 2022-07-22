@@ -1,0 +1,12 @@
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\bin\Debug\BierzaehlerUI.exe.config
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\bin\Debug\BierzaehlerUI.exe
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\bin\Debug\BierzaehlerUI.pdb
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.csproj.AssemblyReference.cache
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.Form1.resources
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.Properties.Resources.resources
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.csproj.GenerateResource.cache
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.csproj.CoreCompileInputs.cache
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.exe
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.pdb
+C:\Users\Juri Nagel\Studium\Softwareentwicklung\Abschlussprojekt\User Interface\BierzaehlerUI\obj\Debug\BierzaehlerUI.Form2.resources
