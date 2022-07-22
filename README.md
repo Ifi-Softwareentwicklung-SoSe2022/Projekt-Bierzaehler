@@ -10,6 +10,7 @@ Sobald der User entschieden hat, wird entweder ein Wert der Datenbank geändert,
 
 Schritt 1:<br> 
 Erstellen einer Datenbank die tabellarisch Werte aufnimmt<br> 
+![](Mindmaps-Version-2/CHipkarte.jpg)
 Schritt 2:<br> 
 Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung zur Datenbank erstellt, sobald die entsprechenden BUttons betätigt wurden.<br> 
 Schritt 3: <br> 
