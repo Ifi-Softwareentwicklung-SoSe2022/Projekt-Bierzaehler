@@ -27,7 +27,7 @@ namespace Testapp_Select
                 using (MySqlConnection connection = new MySqlConnection(connectionString)) //use the variable to connect -> connection (vlt Mysqlconnection)
                 {
                     //Create the command
-                    string query = "SELECT vorname FROM Chipkarte WHERE chip_id = 1";
+                    string query = "SELECT * FROM Chipkarte ";
                     //Auch vllt Mysqlcommand
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.CommandTimeout = 60; //weiß ich nicht wofuer
