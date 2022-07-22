@@ -5,36 +5,59 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using MySqlConnector;
 
-namespace Test
+
+// Change the username, password and database according to your needs
+// You can ignore the database option if you want to access all of them.
+// 127.0.0.1 stands for localhost and the default port to connect.
+string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=Chipkarte_system;";
+//query or command
+string query = "SELECT vorname FROM Chipkarte WHERE chip_id = 2";
+
+// Prepare the connection
+MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+commandDatabase.CommandTimeout = 60;
+MySqlDataReader reader;
+
+// Let's do it !
+try
 {
-    class Program
+    // Open the database
+    databaseConnection.Open();
+
+    // Execute the query
+    reader = commandDatabase.ExecuteReader();
+
+    // All succesfully executed, now do something
+
+    // IMPORTANT : 
+    // If your query returns result, use the following processor :
+    if (reader.Read())
     {
-        static void Main(string[] args)
+        Console.WriteLine(String.Format("{0}", reader["vorname"]));
+    }
+
+    if (reader.HasRows)
+    {
+        while (reader.Read())
         {
-            string connectionString = "Data Source = 24e6b0c39456\\MySQL ; Initial Catalog = Chipkarte_system; User ID = root; Password=Riadr555";
-
-            try
-            {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
-                Console.WriteLine("The database has been opened!");
-                Console.WriteLine("Connection State: " + connection.State.ToString());
-
-                connection.Close();
-                Console.WriteLine("The database has been closed!");
-
-                connection.Dispose();
-                Console.WriteLine("The database connection has been disposed!");
-                Console.WriteLine("Connection State: " + connection.State.ToString());
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("There's an error connecting to the database!\n" + ex.Message);
-            }
-
-            Console.ReadLine();
+            // As our database, the array will contain : ID 0, FIRST_NAME 1,LAST_NAME 2, ADDRESS 3
+            // Do something with every received database ROW
+            string[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3) };
         }
     }
-}
+    else
+    {
+        Console.WriteLine("No rows found.");
+    }
 
+    // Finally close the connection
+    databaseConnection.Close();
+}
+catch (Exception ex)
+{
+    // Show any error message.
+    Console.WriteLine("There's an error connecting to the database!\n" + ex.Message);
+}
