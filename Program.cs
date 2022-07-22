@@ -8,56 +8,84 @@ using System.Data.SqlClient;
 using MySqlConnector;
 
 
-// Change the username, password and database according to your needs
-// You can ignore the database option if you want to access all of them.
-// 127.0.0.1 stands for localhost and the default port to connect.
-string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=Chipkarte_system;";
-//query or command
-string query = "SELECT vorname FROM Chipkarte WHERE chip_id = 2";
-
-// Prepare the connection
-MySqlConnection databaseConnection = new MySqlConnection(connectionString);
-MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-commandDatabase.CommandTimeout = 60;
-MySqlDataReader reader;
-
-// Let's do it !
-try
+namespace Testapp_Select
 {
-    // Open the database
-    databaseConnection.Open();
-
-    // Execute the query
-    reader = commandDatabase.ExecuteReader();
-
-    // All succesfully executed, now do something
-
-    // IMPORTANT : 
-    // If your query returns result, use the following processor :
-    if (reader.Read())
+    class Program
     {
-        Console.WriteLine(String.Format("{0}", reader["vorname"]));
-    }
-
-    if (reader.HasRows)
-    {
-        while (reader.Read())
+        static void Main()
         {
-            // As our database, the array will contain : ID 0, FIRST_NAME 1,LAST_NAME 2, ADDRESS 3
-            // Do something with every received database ROW
-            string[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3) };
-        }
-    }
-    else
-    {
-        Console.WriteLine("No rows found.");
-    }
+            //create variable to connect
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=Chipkarte_system;";
+            //use the variables to store the data (result)
+            int chip_id;
+            string vorname, nachname, datum;
 
-    // Finally close the connection
-    databaseConnection.Close();
+
+            try
+            {
+                //(vlt Mysqlconnection)
+                using (MySqlConnection connection = new MySqlConnection(connectionString)) //use the variable to connect -> connection (vlt Mysqlconnection)
+                {
+                    //Create the command
+                    string query = "SELECT vorname FROM Chipkarte WHERE chip_id = 1";
+                    //Auch vllt Mysqlcommand
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.CommandTimeout = 60; //weiß ich nicht wofuer
+
+                    //open connection
+                    connection.Open();
+
+                    //execute the SQL-Command
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    Console.WriteLine(Environment.NewLine + "Getting Data from Database..." + Environment.NewLine);
+                    Console.WriteLine("Done!");
+
+
+                    //check the Rows in the table
+                    if (reader.HasRows)
+                    {
+                        //Speicher the data
+                        while (reader.Read())
+                        {
+                            chip_id = reader.GetInt32(0);
+                            vorname = reader.GetString(1);
+                            nachname = reader.GetString(2);
+                            //datum = reader.GetString(3);
+
+
+                            //output the data
+                            Console.WriteLine("{0}, {1}, {2}", chip_id.ToString(), vorname, nachname);
+
+                        }
+                    }
+                    else { Console.WriteLine("Table has no rows"); }  //If the table is empty
+
+                    //Close the execution
+                    reader.Close();
+                    //And close the connection
+                    connection.Close();
+
+
+                }
+            }
+
+
+            catch (Exception ex)
+            {
+                Console.WriteLine("Expection: " + ex.Message);
+            }
+
+
+            
+
+        }
+
+
+    }
 }
-catch (Exception ex)
-{
-    // Show any error message.
-    Console.WriteLine("There's an error connecting to the database!\n" + ex.Message);
-}
+
+
+
+
+
