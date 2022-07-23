@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 20, 2022 at 06:38 PM
+-- Generation Time: Jul 23, 2022 at 11:53 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -28,21 +28,20 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `Buchung` (
-  `buchungs_id` int(11) DEFAULT NULL,
-  `chip_id` int(11) DEFAULT NULL,
-  `drink_id` int(11) DEFAULT NULL,
-  `datum` date DEFAULT NULL
+  `buchungs_id` int(11) NOT NULL,
+  `Chip_id` int(11) DEFAULT NULL,
+  `drink_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `Buchung`
 --
 
-INSERT INTO `Buchung` (`buchungs_id`, `chip_id`, `drink_id`, `datum`) VALUES
-(1, 1, 1, '2022-07-20'),
-(2, 1, 1, '2022-07-20'),
-(3, 2, 1, '2022-07-20'),
-(4, 2, 2, '2022-07-20');
+INSERT INTO `Buchung` (`buchungs_id`, `Chip_id`, `drink_id`) VALUES
+(1, 1, 1),
+(2, 1, 1),
+(3, 2, 1),
+(4, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -53,17 +52,16 @@ INSERT INTO `Buchung` (`buchungs_id`, `chip_id`, `drink_id`, `datum`) VALUES
 CREATE TABLE `Chipkarte` (
   `chip_id` int(11) NOT NULL,
   `nachname` varchar(20) DEFAULT NULL,
-  `vorname` varchar(20) DEFAULT NULL,
-  `erstell_datum` date DEFAULT NULL
+  `vorname` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `Chipkarte`
 --
 
-INSERT INTO `Chipkarte` (`chip_id`, `nachname`, `vorname`, `erstell_datum`) VALUES
-(1, 'Rustum', 'Riad', '2022-07-20'),
-(2, 'Nagel', 'Jouri', '2022-07-20');
+INSERT INTO `Chipkarte` (`chip_id`, `nachname`, `vorname`) VALUES
+(1, 'Rustum', 'Riad'),
+(2, 'Nagel', 'Jouri');
 
 -- --------------------------------------------------------
 
@@ -82,8 +80,8 @@ CREATE TABLE `Drink` (
 --
 
 INSERT INTO `Drink` (`drink_id`, `bez`, `preis`) VALUES
-(1, 'Freiberger Pils', 0.5),
-(2, 'Oeti', 0.25);
+(1, 'Freiberger Pils', 1),
+(2, 'Oeti', 0.5);
 
 --
 -- Indexes for dumped tables
@@ -93,7 +91,8 @@ INSERT INTO `Drink` (`drink_id`, `bez`, `preis`) VALUES
 -- Indexes for table `Buchung`
 --
 ALTER TABLE `Buchung`
-  ADD KEY `chip_id` (`chip_id`),
+  ADD PRIMARY KEY (`buchungs_id`),
+  ADD KEY `Chip_id` (`Chip_id`),
   ADD KEY `drink_id` (`drink_id`);
 
 --
@@ -109,6 +108,28 @@ ALTER TABLE `Drink`
   ADD PRIMARY KEY (`drink_id`);
 
 --
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `Buchung`
+--
+ALTER TABLE `Buchung`
+  MODIFY `buchungs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `Chipkarte`
+--
+ALTER TABLE `Chipkarte`
+  MODIFY `chip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `Drink`
+--
+ALTER TABLE `Drink`
+  MODIFY `drink_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- Constraints for dumped tables
 --
 
@@ -116,7 +137,7 @@ ALTER TABLE `Drink`
 -- Constraints for table `Buchung`
 --
 ALTER TABLE `Buchung`
-  ADD CONSTRAINT `buchung_ibfk_1` FOREIGN KEY (`chip_id`) REFERENCES `Chipkarte` (`chip_id`),
+  ADD CONSTRAINT `buchung_ibfk_1` FOREIGN KEY (`Chip_id`) REFERENCES `Chipkarte` (`chip_id`),
   ADD CONSTRAINT `buchung_ibfk_2` FOREIGN KEY (`drink_id`) REFERENCES `Drink` (`drink_id`);
 COMMIT;
 
