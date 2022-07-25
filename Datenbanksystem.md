@@ -30,4 +30,4 @@ Damit sieht unser Endresultat des Relationsmodell folgend aus:
 |---------------------|------------|-------------|
 
   
-![Hier](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Mindmaps-Version-2/CHipkarte.jpg) finden Sie unsere erste Version der DataMining
+![Hier](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Mindmaps-Version-2/CHipkarte.jpg) Hiermit haben wir unsere erste Gedanken zusammengefasst.
