@@ -9,14 +9,14 @@ Der User kann nun auf der GUI entscheiden zwischen Freiberger, Oettinger, seiner
 Sobald der User entschieden hat, wird entweder ein Wert der Datenbank geändert, oder abgerufen. <br> 
 
 Schritt 1:<br> 
-Erstellen einer Datenbank die tabellarisch Werte aufnimmt<br> 
-![](Mindmaps-Version-2/CHipkarte.jpg)
+Erstellen einer Datenbank die tabellarisch Werte aufnimmt. ([Datenbank Dokumenation](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md)) <br>
 Schritt 2:<br> 
-Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung zur Datenbank erstellt, sobald die entsprechenden BUttons betätigt wurden.<br> 
+Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung zur Datenbank erstellt, sobald die entsprechenden Buttons betätigt wurden.([UI Test](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Versuch%20des%20vollständigen%20Programms.md),[Planung UI](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Planung%20des%20UI)) 
+<br> 
 Schritt 3: <br> 
-RFID-Reader mit Raspberry-PI verbinden <br> 
+[RFID-Reader mit Raspberry-PI verbinden.](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md)<br>
 Schritt 4: <br> 
-Datenbank, C#-Programm auf Raspberry-PI übertragen und Display anschliessen <br> 
+Datenbank, C#-Programm auf Raspberry-PI übertragen und Display anschliessen.([Raspberry PI Dokumentation](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Raspberry%20PI%204%20vorbereiten.md)) <br>
 Schritt 5: <br> 
 
 
