@@ -9,14 +9,14 @@ Der User kann nun auf der GUI entscheiden zwischen Freiberger, Oettinger, seiner
 Sobald der User entschieden hat, wird entweder ein Wert der Datenbank geändert, oder abgerufen. <br> 
 
 #### Schritt 1:<br> 
-Erstellen einer Datenbank die tabellarisch Werte aufnimmt und eine Verbindung über C# herstellen. ([Datenbank Dokumenation](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md)) <br>
+Erstellen einer Datenbank die tabellarisch Werte aufnimmt und eine Verbindung über C# herstellen. ([Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md)) <br>
 #### Schritt 2:<br> 
-Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung mit der Datenbank über C# erstellt.([UI Test](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Versuch%20des%20vollständigen%20Programms.md),[Planung UI](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Planung%20des%20UI)) 
+Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung mit der Datenbank über C# erstellt.([Link1](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Versuch%20des%20vollständigen%20Programms.md),[Link2](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Planung%20des%20UI)) 
 <br> 
 #### Schritt 3: <br> 
 [RFID-Reader mit Raspberry-PI verbinden.](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md)<br>
 #### Schritt 4: <br> 
-Datenbank, C#-Programm auf Raspberry-PI übertragen und Display anschliessen.([Raspberry PI Dokumentation](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Raspberry%20PI%204%20vorbereiten.md)) <br>
+Datenbank, C#-Programm auf Raspberry-PI übertragen und Display anschliessen.([Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Raspberry%20PI%204%20vorbereiten.md)) <br>
 
 
 
