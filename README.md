@@ -17,7 +17,8 @@ Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung mit der Daten
 RFID-Reader mit Raspberry-PI verbinden. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/RFID-Reader.md) <br>
 #### Schritt 4: <br> 
 Datenbank, C#-Programm auf Raspberry-PI übertragen und Display anschliessen. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Raspberry%20PI%204%20vorbereiten.md) <br>
-
+#### Schritt 5:
+Finale Versionen uploaden
 
 
 
