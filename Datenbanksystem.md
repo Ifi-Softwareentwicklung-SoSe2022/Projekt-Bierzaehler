@@ -30,7 +30,10 @@ Damit sieht unser Endresultat des Relationsmodell folgend aus:
 
   
 ![Hier](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Mindmaps-Version-2/CHipkarte.jpg) 
-                                        Hiermit haben wir unsere ersten Gedanken zusammengefasst.
+Hiermit haben wir unsere ersten Gedanken zusammengefasst.
+  
+  
+  
   <br>
   Verbindung zwischen Datenbanksystem und  C# herstellen:
 =======================================================
