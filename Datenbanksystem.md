@@ -30,4 +30,5 @@ Damit sieht unser Endresultat des Relationsmodell folgend aus:
 |---------------------|------------|-------------|
 
   
-![Hier](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Mindmaps-Version-2/CHipkarte.jpg) Hiermit haben wir unsere erste Gedanken zusammengefasst.
+![Hier](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Mindmaps-Version-2/CHipkarte.jpg) 
+                                        Hiermit haben wir unsere erste Gedanken zusammengefasst.
