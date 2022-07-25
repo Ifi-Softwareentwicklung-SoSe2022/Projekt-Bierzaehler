@@ -25,7 +25,7 @@ Damit sieht unser Endresultat des Relationsmodell folgend aus:
 |-------------------|-----------------|-------------|
 
 ### Buchung:
-| <u>buchung_id (INT) (PK)  | chip_id FK | drink_id FK |
+| <u>buchung_id (INT) (PK)  | chip_id (FK) | drink_id (FK) |
 |---------------------|------------|-------------|
 
   
