@@ -14,7 +14,7 @@ Erstellen einer Datenbank die tabellarisch Werte aufnimmt und eine Verbindung ü
 Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung mit der Datenbank über C# erstellt. [Link1](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Versuch%20des%20vollständigen%20Programms.md),[Link2](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Planung%20des%20UI)
 <br> 
 #### Schritt 3: <br> 
-RFID-Reader mit Raspberry-PI verbinden. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Raspberry%20PI%204%20vorbereiten.md) <br>
+RFID-Reader mit Raspberry-PI verbinden. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/RFID-Reader.md) <br>
 #### Schritt 4: <br> 
 Datenbank, C#-Programm auf Raspberry-PI übertragen und Display anschliessen. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Raspberry%20PI%204%20vorbereiten.md) <br>
 
