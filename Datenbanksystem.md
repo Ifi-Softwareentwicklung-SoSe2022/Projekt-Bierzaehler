@@ -29,3 +29,5 @@ Damit sieht unser Endresultat des Relationsmodell folgend aus:
 | <u>buchung_id (INT)  | chip_id FK | drink_id FK |
 |---------------------|------------|-------------|
 
+  
+[Hier] finden Sie unsere erste Version der DataMining
