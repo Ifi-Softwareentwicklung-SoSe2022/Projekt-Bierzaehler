@@ -31,3 +31,12 @@ Damit sieht unser Endresultat des Relationsmodell folgend aus:
   
 ![Hier](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Mindmaps-Version-2/CHipkarte.jpg) 
                                         Hiermit haben wir unsere ersten Gedanken zusammengefasst.
+  <br>
+  Verbindung zwischen Datenbanksystem und  C# herstellen:
+=======================================================
+
+
+
+Um die Verbindung mit der  Datenbankbank herzustellen, muss man SQL auf dem Betriebsystem installieren und einen Servermanager dazu. Welcher die Datenbank aufruft, um die Datenbank bearbeiten zu können. XAMPP mit Abstand hat sich gezeigt, dass das unser beste Variante ist, um unseren Zweck zu erfüllen. XAMPP stellt eine Verbindung zu dem Localhost, sodass auf dem Browser das Datenbanksystem angezeigt und bearbeitet werden kann.
+
+Nun bleibt nur noch die Verbindung zwischen c# und dem Server herzustellen- Damit benötigt man die folgenden Informationen: Data Source, Port, Username, Password und den Name der Datenbank. Sobald man die Informationen erhalten hat, kann man durch die Bibliothek bzw. die Erweiterung "MySqlConnector" die Parameter einfügen. Somit ist der Cennectorstring implementiert
