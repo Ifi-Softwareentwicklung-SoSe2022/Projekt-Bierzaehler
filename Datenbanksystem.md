@@ -35,7 +35,7 @@ Hiermit haben wir unsere ersten Gedanken zusammengefasst.
   
   
   <br>
-  Verbindung zwischen Datenbanksystem und  C# herstellen:
+Verbindung zwischen Datenbanksystem und  C# herstellen:
 =======================================================
 
 
