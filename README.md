@@ -11,7 +11,7 @@ Sobald der User entschieden hat, wird entweder ein Wert der Datenbank geändert,
 #### Schritt 1:<br> 
 Erstellen einer Datenbank die tabellarisch Werte aufnimmt und eine Verbindung über C# herstellen. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md) <br>
 #### Schritt 2:<br> 
-Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung mit der Datenbank über C# erstellt. [Link1](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Versuch%20des%20vollständigen%20Programms.md),[Link2](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Planung%20des%20UI)
+Erstellen einer GUI die benutzerfreundlich ist und eine Verbindung mit der Datenbank über C# erstellt. [Link1](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Versuch%20des%20vollständigen%20Programms.md),[Link2](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Planung%20des%20UI.md))
 <br> 
 #### Schritt 3: <br> 
 RFID-Reader mit Raspberry-PI verbinden. [Link](https://github.com/Ifi-Softwareentwicklung-SoSe2022/Projekt-Bierzaehler/blob/Dokumentation/Datenbanksystem.md)<br>
