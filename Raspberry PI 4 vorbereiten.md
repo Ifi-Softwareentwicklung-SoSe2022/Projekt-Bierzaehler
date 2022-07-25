@@ -1,3 +1,4 @@
+## Raspberry PI 4 vorbereiten
 Angedacht war in der Planung den Raspberry PI (damals noch nicht bekannt welches Modell) mit Windows IoT 10 zu bespielen. Leider unterstützt jedoch WIN IoT 10 nicht die ARM Architektur. Somit wurde Debian 11 die Ausweichvariante, was jedoch etliche Probleme mit sich brachte, da Debian 11 Linux basiert ist. <br>
 <br>
 Probleme, die sich durch Änderung des OS auftaten, waren: <br>
